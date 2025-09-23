@@ -1,0 +1,18 @@
+# frozen_string_literal: true # rubocop:disable Layout/EndOfLine
+
+source 'https://rubygems.org'
+
+group :development, :test do
+  gem 'factory_bot_rails'           # Test data generation
+  gem 'pry-byebug'                  # Debugging
+  gem 'rspec-rails'                 # Testing framework
+  gem 'rubocop', '~> 1.4'           # Linting and formatting
+  gem 'ruby-lsp', '~> 0.12'         # Language server for VSCode
+end
+
+group :development do
+  gem 'listen', '~> 3.3'            # File watching
+  gem 'ruby-lsp-rails'              # Rails-specific LSP features
+  gem 'ruby-lsp-rspec'              # RSpec-specific LSP features
+  gem 'spring'                      # Application preloader
+end
